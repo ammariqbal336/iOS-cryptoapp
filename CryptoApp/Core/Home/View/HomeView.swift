@@ -16,6 +16,7 @@ struct HomeView: View {
                 .ignoresSafeArea()
             VStack {
                 homeHeader
+                SearchBarView(searchText: $vm.searchText)
                 columnTitle
                 Spacer(minLength: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/)
                 if !showPortfolio {

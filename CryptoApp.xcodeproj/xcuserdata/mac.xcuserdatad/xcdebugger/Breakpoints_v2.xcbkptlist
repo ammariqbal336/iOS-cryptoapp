@@ -8,7 +8,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "7B2E3F19-042F-42AF-9536-A013FBD849DE"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CryptoApp/Core/Components/XMarkView.swift"
@@ -48,6 +48,21 @@
                   startingLineNumber = "17"
                   endingLineNumber = "17"
                   offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "7B2E3F19-042F-42AF-9536-A013FBD849DE - 476b34e6f0d2054"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in CryptoApp.XMarkView.body.getter : some"
+                  moduleName = "CryptoApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Desktop/developement/personal%20pro/ios/CryptoApp/CryptoApp/Core/Components/XMarkView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "244">
                </Location>
             </Locations>
          </BreakpointContent>

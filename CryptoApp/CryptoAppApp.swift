@@ -23,5 +23,6 @@ struct CryptoAppApp: App {
             }
         }
         .environmentObject(vm)
+        //.environmentObject(vm)
     }
 }

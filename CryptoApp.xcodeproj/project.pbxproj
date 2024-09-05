@@ -33,6 +33,7 @@
 		04C154442C7F93B800E0EF75 /* CoinRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C154432C7F93B800E0EF75 /* CoinRowView.swift */; };
 		04C154462C7F93E700E0EF75 /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C154452C7F93E700E0EF75 /* PreviewProvider.swift */; };
 		04C154482C7F9EC300E0EF75 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C154472C7F9EC300E0EF75 /* HomeViewModel.swift */; };
+		B8AD456E2C89B2C500EA322E /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8AD456D2C89B2C500EA322E /* HapticManager.swift */; };
 		B8F283A22C803A4A00A14F8B /* CoinDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F283A12C803A4A00A14F8B /* CoinDataService.swift */; };
 		B8F283A52C80531500A14F8B /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F283A42C80531500A14F8B /* NetworkManager.swift */; };
 		B8F283A72C805A6B00A14F8B /* CoinImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F283A62C805A6B00A14F8B /* CoinImageView.swift */; };
@@ -68,6 +69,7 @@
 		04C154432C7F93B800E0EF75 /* CoinRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinRowView.swift; sourceTree = "<group>"; };
 		04C154452C7F93E700E0EF75 /* PreviewProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
 		04C154472C7F9EC300E0EF75 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		B8AD456D2C89B2C500EA322E /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
 		B8F283A12C803A4A00A14F8B /* CoinDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDataService.swift; sourceTree = "<group>"; };
 		B8F283A42C80531500A14F8B /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		B8F283A62C805A6B00A14F8B /* CoinImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinImageView.swift; sourceTree = "<group>"; };
@@ -222,6 +224,7 @@
 			children = (
 				B8F283A42C80531500A14F8B /* NetworkManager.swift */,
 				041FBA722C80E41B00F72ABA /* LocalFileManager.swift */,
+				B8AD456D2C89B2C500EA322E /* HapticManager.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -322,6 +325,7 @@
 				04A8111D2C8367B700047555 /* StatisticsView.swift in Sources */,
 				04C154422C7F8FE300E0EF75 /* Double.swift in Sources */,
 				04A0D9A22C7CE962001B74C7 /* HomeView.swift in Sources */,
+				B8AD456E2C89B2C500EA322E /* HapticManager.swift in Sources */,
 				041FBA752C80EFB000F72ABA /* SearchBarView.swift in Sources */,
 				0498C54B2C7A2D1700E0A719 /* CryptoAppApp.swift in Sources */,
 				04A3C5402C8481FB00E73EC5 /* CoinLogoView.swift in Sources */,
@@ -468,7 +472,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CryptoApp/Preview Content\"";
-				DEVELOPMENT_TEAM = 76SR6S8SNL;
+				DEVELOPMENT_TEAM = R33FJ93Y8M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "Crypto Tracker";
@@ -477,6 +481,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -498,7 +503,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CryptoApp/Preview Content\"";
-				DEVELOPMENT_TEAM = 76SR6S8SNL;
+				DEVELOPMENT_TEAM = R33FJ93Y8M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "Crypto Tracker";
@@ -507,6 +512,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

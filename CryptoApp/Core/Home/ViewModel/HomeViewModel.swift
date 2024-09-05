@@ -22,6 +22,7 @@ class HomeViewModel : ObservableObject {
     private var cancellable = Set<AnyCancellable>()
     
     init() {
+<<<<<<< HEAD
        addSubscribers()
     }
     
@@ -55,6 +56,12 @@ class HomeViewModel : ObservableObject {
             .store(in: &cancellable)
         
         
+=======
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            self.allCoins.append(DeveloperPreview.instance.coin)
+            self.portfolioCoins.append(DeveloperPreview.instance.coin)
+        }        
+>>>>>>> 2a783c7 (space)
     }
     
     private func mapAllCoins(allCoins: [CoinModel], portfolioEntities: [PortfolioEntity]) -> [CoinModel] {

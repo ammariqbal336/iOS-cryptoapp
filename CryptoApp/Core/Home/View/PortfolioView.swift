@@ -102,7 +102,7 @@ extension PortfolioView {
     private var portfolioInputSection: some View {
         VStack(spacing: 20) {
             HStack {
-                Text("Current value of \(selectedCoin?.symbol?.uppercased() ?? "") : ")
+                Text("Current value of \(selectedCoin?.symbol.uppercased() ?? "") : ")
                 Spacer()
                 Text(selectedCoin?.currentPrice?.asCurrencyWith6Decimal() ?? "")
             }

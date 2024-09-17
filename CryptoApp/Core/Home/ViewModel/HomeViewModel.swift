@@ -96,9 +96,9 @@ class HomeViewModel : ObservableObject {
         let lowerCase = text.lowercased()
         
         return coins.filter { coin in
-            return coin.name!.lowercased().contains(lowerCase) ||
-            coin.symbol!.lowercased().contains(lowerCase) ||
-            coin.id!.lowercased().contains(lowerCase)
+            return coin.name.lowercased().contains(lowerCase) ||
+            coin.symbol.lowercased().contains(lowerCase) ||
+            coin.id.lowercased().contains(lowerCase)
         }
     }
     

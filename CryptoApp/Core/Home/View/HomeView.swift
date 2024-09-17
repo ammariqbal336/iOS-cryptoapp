@@ -11,6 +11,9 @@ struct HomeView: View {
     @EnvironmentObject private var vm: HomeViewModel
     @State private var showPortfolio : Bool = false
     @State private var showPortfolioView : Bool = false
+    
+    @State private var selectedCoin : CoinModel? = nil
+    @State private var showDetailView : Bool = false
     var body: some View {
         ZStack {
             Color.theme.background
@@ -36,8 +39,20 @@ struct HomeView: View {
                         .transition(.move(edge: .trailing))
                 }
             }
+            
         }
+        .background(
+            NavigationLink(
+                destination: DetailLoadingView(coin: $selectedCoin ),
+                isActive: $showDetailView,
+                label: {
+                    EmptyView()
+                })
+        )
     }
+    
+    
+    
 }
 
 #Preview {
@@ -49,6 +64,8 @@ struct HomeView: View {
     .environmentObject(DeveloperPreview.instance.homeVM)
     
 }
+
+ 
 
 extension HomeView {
     
@@ -88,8 +105,12 @@ extension HomeView {
     private var allCoinList: some View {
         List {
             ForEach(vm.allCoins) { coin in
+                
                 CoinRowView(coin: coin, showHoldingColumn: false)
                     .listRowInsets(.init(top: 10, leading: 0, bottom: 10, trailing: 10))
+                    .onTapGesture {
+                        sogue(coin: coin)
+                    }
             }
         }
         .listStyle(.plain)
@@ -100,6 +121,9 @@ extension HomeView {
             ForEach(vm.portfolioCoins) { coin in
                 CoinRowView(coin: coin, showHoldingColumn: true)
                     .listRowInsets(.init(top: 10, leading: 0, bottom: 10, trailing: 10))
+                    .onTapGesture {
+                        sogue(coin: coin)
+                    }
             }
         }
         .listStyle(.plain)
@@ -163,6 +187,11 @@ extension HomeView {
         .foregroundColor(Color.theme.secondaryText)
         .padding(.horizontal)
         
+    }
+    
+    private func sogue(coin: CoinModel) {
+        selectedCoin = coin
+        showDetailView.toggle()
     }
 }
 
